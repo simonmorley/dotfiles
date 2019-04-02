@@ -246,8 +246,8 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # ===================
 # brew install jump
 # https://github.com/gsamokovarov/jump
-eval "$(jump shell)"
+# eval "$(jump shell)"
 
 # brew install direnv
 # https://github.com/direnv/direnv
-eval "$(direnv hook zsh)"
+# eval "$(direnv hook zsh)"
