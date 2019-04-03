@@ -1,5 +1,5 @@
 # =============
-#    INIT
+#    INIT TEST
 # =============
 
 # Senstive functions which are not pushed to Github
