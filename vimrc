@@ -1,4 +1,4 @@
-" I use the same vimrc for both nvim and vim
+ " I use the same vimrc for both nvim and vim
 call plug#begin('~/.vim/plugged')
 
 Plug 'AndrewRadev/splitjoin.vim'
@@ -31,6 +31,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-scriptease'
 Plug 'ervandew/supertab'
 Plug 'altercation/vim-colors-solarized'
+Plug 'ctrlpvim/ctrlp.vim'
 
 call plug#end()
 
@@ -102,12 +103,12 @@ endif
 " color
 syntax enable
 set t_Co=256
-let g:solarized_termcolors=256 "this is what fixed it for me
+" let g:solarized_termcolors=256 "this is what fixed it for me
 set background=light
 " let g:molokai_original = 1
 " let g:rehash256 = 1
-colorscheme solarized
-" colorscheme molokai
+" colorscheme solarized
+colorscheme molokai
 
 
 augroup filetypedetect
@@ -507,8 +508,11 @@ imap <expr> <CR> pumvisible() ? "\<c-y>" : "<Plug>delimitMateCR"
 
 " ==================== NerdTree ====================
 " For toggling
-noremap <Leader>n :NERDTreeToggle<cr>
-noremap <Leader>f :NERDTreeFind<cr>
+noremap <Leader>d :NERDTreeToggle<cr>
+noremap <leader>f :NERDTreeFind<cr>
+noremap <leader>a :Ag<space>
+nnoremap <leader>t :CtrlP<CR>
+nnoremap <leader>b :CtrlPBuffer<CR>
 
 let NERDTreeShowHidden=1
 
